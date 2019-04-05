@@ -1,0 +1,16 @@
+{
+  "parkingdata": [
+    {
+      "id": 1,
+      "parkingPlace": 100
+    },
+    {
+      "id": 2,
+      "parkingPlace": 34
+    },
+    {
+      "id": 3,
+      "parkingPlace": 11134
+    }
+  ]
+}
