@@ -4,22 +4,25 @@ import { FormsModule } from '@angular/Forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { PostService } from './services/post.service';
+import { ParkingService } from './services/parking.service';
 import { ParkingComponent } from './components/parking/parking.component';
-
+import {AppRoutingModule} from './app-routing.module';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ParkingComponent
+    ParkingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
-  providers: [PostService],
+  providers: [ParkingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

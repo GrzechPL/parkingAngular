@@ -1,4 +1,4 @@
-export interface Post {
+export interface Parking {
   id: number;
   parkingPlace: number;
 }

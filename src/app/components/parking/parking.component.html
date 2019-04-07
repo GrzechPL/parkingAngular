@@ -1,5 +1,9 @@
-<h2>Posts</h2>
-<div class="card" *ngFor="let post of posts">
-      <p>{{ post.id }}</p>
-    <h5>{{ post.parkingPlace }}</h5>
+<div class="parking" *ngFor="let parking of parking">
+    <p>Numer id: {{ parking.id }}</p>
+    <p><b>Ilość miejsc wolnych : {{ parking.parkingPlace }}</b></p>
+    <p>Data odczytu: {{data | date:'fullDate'}}</p> 
+    <p>Godzina odczytu: {{data | date:'shortTime'}}</p> 
+    <button routerLink = "/home" class = "btn btn-success" >Odświeżanie</button>
+    <br/>
+    <br/>
 </div>

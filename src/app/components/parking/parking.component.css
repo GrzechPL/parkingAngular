@@ -1,5 +1,4 @@
-.card {
+.parking {
+    border: 1px solid;
     text-align: center;
-    /* position: inline-block; */
-    top: 50px;
 }

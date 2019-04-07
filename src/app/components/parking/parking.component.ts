@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from '../../services/post.service';
+import { ParkingService } from '../../services/parking.service';
 
-import { Post } from '../../models/Post';
+import { Parking } from '../../models/Parking';
 
 @Component({
   selector: 'app-parking',
@@ -9,13 +9,15 @@ import { Post } from '../../models/Post';
   styleUrls: ['./parking.component.css']
 })
 export class ParkingComponent implements OnInit {
-  posts: Post[];
+  parking: Parking[];
+  data: Date;
 
-  constructor(private postService: PostService) { }
+  constructor(private parkingService: ParkingService) { }
 
   ngOnInit() {
-    this.postService.getPosts().subscribe(posts => {
-      this.posts = posts;
+    this.parkingService.getParking().subscribe(parking => {
+      this.parking = parking;
+      this.data = new Date;
     });
   }
 
