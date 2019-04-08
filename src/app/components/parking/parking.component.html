@@ -3,7 +3,7 @@
     <p><b>Ilość miejsc wolnych : {{ parking.parkingPlace }}</b></p>
     <p>Data odczytu: {{data | date:'fullDate'}}</p> 
     <p>Godzina odczytu: {{data | date:'shortTime'}}</p> 
-    <button routerLink = "/home" class = "btn btn-success" >Odświeżanie</button>
+    <button (click)="refreshEvent($event)" class = "btn btn-success" >Odświeżanie</button>
     <br/>
     <br/>
 </div>

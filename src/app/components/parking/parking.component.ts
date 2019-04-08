@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ParkingService } from '../../services/parking.service';
-
 import { Parking } from '../../models/Parking';
 
 @Component({
@@ -20,5 +19,7 @@ export class ParkingComponent implements OnInit {
       this.data = new Date;
     });
   }
-
+  refreshEvent(e) {
+    this.ngOnInit();
+  }
 }
